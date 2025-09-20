@@ -1,0 +1,126 @@
+{
+  "03-FI-002": {
+    "kind": "liquid",
+    "df_key": "U_2",
+    "config": {
+      "meter_type": "Square Root",
+      "design_temp_c": 80.0,
+      "dcs_max": 145.6,
+      "design_base_density": 677.0,
+      "fe_max_kgph": 85393.1964495961,
+      "design_flowing_density": 614.442500048806,
+      "correction_method": "UOP Naphtha"
+    },
+    "actuals": {
+      "flow": { "tag": "03-FI-002" },
+      "temp": { "constant": 80.0 },
+      "base_density": { "lab": { "sample": "03-SC-02", "test": "Density at 15ºC" } }
+    }
+  },
+
+  "05-FI-1024": {
+    "kind": "gas",
+    "df_key": "U_5_new",
+    "config": {
+      "meter_type": "Coriolis",
+      "design_temp_c": 38.0,
+      "dcs_max": 20000.0,
+      "fe_max_kgph": 20000.0,
+      "design_pressure_barg": 12.3,
+      "z_design": 0.995,
+      "design_mw": 10.8,
+      "dcs_data_type": "Raw"
+    },
+    "actuals": {
+      "flow":  { "tag": "05-FI-1024" },
+      "temp":  { "tag": "05-TI-1052A" },
+      "press": { "tag": "05-PIC-1018" },
+      "mw":    { "lab": { "sample": "05-SC-10", "test": "Ave. M.WT." } }
+    }
+  },
+
+  "05-FI-1038": {
+  "kind": "gas",
+  "df_key": "U_5_new",
+  "config": {
+    "meter_type": "Square Root",
+    "design_temp_c": 38.0,
+    "dcs_max": 100.0,
+    "fe_max_kgph": 56.71,
+    "design_pressure_barg": 3.1,
+    "z_design": 0.992,
+    "design_mw": 14.0,
+    "dcs_data_type": "Corrected"
+  },
+  "actuals": {
+    "flow":  { "tag": "05-FI-1038" },
+    "temp":  { "tag": "05-TI-1072" },
+    "press": { "tag": "05-PI-1029" },
+    "mw":    { "lab": { "sample": "39-SC-01", "test": "Ave. M.WT." } }
+  }
+  },
+  
+  "05-FI-009": {
+    "kind": "gas",
+    "df_key": "U_5",
+    "config": {
+      "meter_type": "Square Root",
+      "design_temp_c": 38.0,
+      "dcs_max": 7300.0,
+      "fe_max_kgph": 1326.56,
+      "design_pressure_barg": 39.72,
+      "z_design": 1.02,
+      "design_mw": 4.2,
+      "dcs_data_type": "Raw"
+    },
+    "actuals": {
+      "flow":  { "tag": "05-FE-009" },
+      "temp":  { "tag": "05-TI-021" },
+      "press": { "tag": "05-PI-014" },
+      "mw":    { "lab": { "sample": "05-SC-01", "test": "Ave. M.WT." } }
+    }
+  },
+
+  "02-FI-019": {
+    "kind": "gas",
+    "df_key": "U_2",
+    "config": {
+      "meter_type": "Square Root",
+      "design_temp_c": 38.0,
+      "dcs_max": 1650.0,
+      "fe_max_kgph": 1030.6, 
+      "design_pressure_barg": 3.5,
+      "z_design": 0.99,
+      "design_mw": 14.0,
+      "dcs_data_type": "Raw"
+    },
+    "actuals": {
+      "flow":  { "tag": "02-FI-019" },
+      "temp":  { "tag": "02-TI-058" },
+      "press": { "tag": "02-PI-058" },
+      "mw":    { "lab": { "sample": "39-SC-01", "test": "Ave. M.WT." } }
+    }
+  },
+
+  "18-FIC-061": {
+  "kind": "gas",
+  "df_key": "U_18",
+  "config": {
+    "meter_type": "Linear",
+    "design_temp_c": 120.0,
+    "dcs_max": 1100.0,
+    "fe_max_kgph": 687.1,
+    "design_pressure_barg": 3.72,
+    "z_design": 0.99,
+    "design_mw": 14.0,
+    "dcs_data_type": "Corrected"
+  },
+  "actuals": {
+    "flow": { "tag": "18-FIC-061" },
+    "temp": { "tag": "18-TI-097" },
+    "press": { "tag": "18-PT-049" },
+    "mw": { "lab": { "sample": "39-SC-01", "test": "Ave. M.WT." } }
+  }
+}
+
+}
